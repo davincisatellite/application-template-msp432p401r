@@ -1,0 +1,1 @@
+# Application Template (MSP432P401R)
