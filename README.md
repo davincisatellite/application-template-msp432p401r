@@ -2,19 +2,30 @@
 This repository can be used to start a new application project for the MSP432P401R MCU.
 The project can be imported into and built with Code Composer Studio (CCS), or, alternatively, cloned using git and built using a GCC toolchain in a GNU/Linux environment.
 
-# Prerequisites
+# Using Code Composer Studio
+## Prerequisites
 * A github account with an SSH key set up.
-## GNU/Linux
-* gmake
-* git
 
-
-# Setup
-## Code Composer Studio
+## Setup
 1. Download and install
     * [Code Composer Studio 12.3.0](https://www.ti.com/tool/download/CCSTUDIO)
 
-## GNU/Linux
+## Importing
+TODO
+
+## Building
+TODO
+
+## Flashing
+TODO
+
+# Using GCC/GMake
+## Prerequisites
+* A github account with an SSH key set up.
+* gmake
+* git
+
+## Setup
 1. Download and install:
     * [GNU Arm Embedded Toolchain 7-2017-q4-major](https://developer.arm.com/tools-and-software/open-source-software/developer-tools/gnu-toolchain/gnu-rm/downloads/7-2017-q4-major-1-1)
     * [SimpleLink MSP432P4 SDK 3.40.01.02](https://www.ti.com/tool/download/SIMPLELINK-MSP432-SDK/3.40.01.02)
@@ -44,40 +55,31 @@ Environment variable decleration example:
 export SIMPLELINK_MSP432_SDK_INSTALL_DIR=/home/username/simplelink_msp432p4_sdk_3_40_01_02
 ```
 
-# Importing
-## Code Composer Studio
-TODO
-## GNU/Linux
+
+## Importing
 1. Clone the repository
 
 ```
 git clone git@github.com:davincisatellite/application-template-msp432p401r.git
 ```
 
-# Building
-## Code Composer Studio
-TODO
-
-## GNU/Linux
+## Building
 1. Go into the 'gcc' folder in the project
 
 ```
 cd application-template-msp432p401r
 cd gcc
 ```
-2. Invoke gmake
+2. Run gmake
 
 ```
 make
 ```
 
-# Flashing
-## Code Composer Studio
-TODO
-## GNU/Linux
+## Flashing
 TODO
 
-# Problems
+# Common problems and fixes
 
 Problem: When `make`ing
 ```bash
