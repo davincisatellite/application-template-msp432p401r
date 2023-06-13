@@ -48,6 +48,7 @@ LFLAGS = -Wl,-T,../gcc/msp432p401r.lds \
 	"-L$(GCC_ARMCOMPILER)/arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard" \
 	-lgcc \
 	-lc \
+	-lstdc++ \
 	-lm \
 	-lnosys \
 	--specs=nano.specs
@@ -67,7 +68,7 @@ gcc_startup_msp432p401r_gcc.obj: ../gcc/startup_msp432p401r_gcc.c
 	@ $(CC) $(CFLAGS) $< -c -o $@
 
 $(NAME).out: $(OBJECTS)
-	@ echo linking $@ with $^
+	@ echo Linking $@ with $^
 	@ $(LNK)  $(OBJECTS)  $(LFLAGS) -o $(NAME).out
 
 clean:
