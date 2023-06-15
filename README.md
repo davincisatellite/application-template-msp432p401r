@@ -11,7 +11,7 @@ The project can be imported into and built with Code Composer Studio (CCS), or, 
     * [Code Composer Studio 12.3.0](https://www.ti.com/tool/download/CCSTUDIO)
 
 ## Importing
-1. Clone the repository using your favorite method (e.g. Github Desktop, GitKraken) to a location of your liking.
+1. Clone the repository using your favorite method (e.g. Git bash (recommended), Github Desktop, GitKraken) to a location of your liking.
 2. Open CCS
 3. In CCS: File > Import > Git > Projects from Git > Existing local repository
 
