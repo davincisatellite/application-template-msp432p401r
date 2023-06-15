@@ -11,7 +11,9 @@ The project can be imported into and built with Code Composer Studio (CCS), or, 
     * [Code Composer Studio 12.3.0](https://www.ti.com/tool/download/CCSTUDIO)
 
 ## Importing
-TODO
+1. Clone the repository using your favorite method (e.g. Github Desktop, GitKraken) to a location of your liking.
+2. Open CCS
+3. In CCS: File > Import > Git > Projects from Git > Existing local repository
 
 ## Building
 TODO
@@ -29,6 +31,7 @@ TODO
 1. Download and install:
     * [GNU Arm Embedded Toolchain 7-2017-q4-major](https://developer.arm.com/tools-and-software/open-source-software/developer-tools/gnu-toolchain/gnu-rm/downloads/7-2017-q4-major-1-1)
     * [SimpleLink MSP432P4 SDK 3.40.01.02](https://www.ti.com/tool/download/SIMPLELINK-MSP432-SDK/3.40.01.02)
+    * [Uniflash 8.2.0](https://www.ti.com/tool/download/UNIFLASH/8.2.0)
 
 2. Open \<SimpleLink SDK install location>/imports.mak and modify the following:
     * Set `GCC_ARMCOMPILER` to point to your GNU Arm Embedded Toolchain folder location.
@@ -77,7 +80,10 @@ make
 ```
 
 ## Flashing
-TODO
+1. Run dslite.sh with [the correct ccxml](https://github.com/zephyrproject-rtos/zephyr/blob/main/boards/arm/msp_exp432p401r_launchxl/support/MSP432P401R.ccxml) configuration file.
+```
+/home/username/ti/uniflash_8.2.0/dslite.sh --config=/path/to/MSP432P401R.ccxml blinkled-msp432p401r.out
+```
 
 # Common problems and fixes
 
